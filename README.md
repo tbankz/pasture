@@ -1,2 +1,2 @@
-# pastutre
+# pasture
 Devotional App
