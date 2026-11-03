@@ -1,2 +1,0 @@
-# pasture
-Devotional App
