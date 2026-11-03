@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasture — Devotional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-morning">
+
+    <!-- Background Elements -->
+    <div class="gradient-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="noise"></div>
+
+    <!-- SCREEN 1: Splash -->
+    <div id="screen-splash" class="screen visible">
+        <div class="splash-content">
+            <h1 class="title">Pasture</h1>
+            <p class="subtitle">A quiet place to meet with God</p>
+        </div>
+    </div>
+
+    <!-- SCREEN 2: Main Content -->
+    <div id="screen-content" class="screen hidden">
+        
+        <!-- Sticky Navigation -->
+        <div class="nav-header">
+            <div class="nav-left">
+                <div class="time" id="current-time">Morning Hue</div>
+            </div>
+            <div class="day-selector" id="day-selector"></div>
+        </div>
+
+        <!-- MAIN DEVOTIONAL CONTENT -->
+        <div class="devotional-container">
+            
+            <!-- DAILY DEVOTIONAL -->
+            <div class="week-title">Volume 1: Spiritual Warfare</div>
+            <h1 class="day-title-display" id="display-day-title">Day 1: The Ear That Never Sleeps</h1>
+            
+            <span class="scripture-reference" id="display-scripture-ref">Nehemiah 1:6</span>
+            <h2 class="scripture-text" id="display-scripture">"Let your ear be attentive..."</h2>
+            
+            <!-- The reflection text is injected here. It now contains inline footnotes. -->
+            <div class="reflection-text" id="display-reflection"></div>
+            
+            <div class="section-divider"></div>
+            <div class="block-title">Penetrating Questions</div>
+            <ul class="question-list" id="display-questions"></ul>
+            
+            <div class="section-divider"></div>
+            <div class="block-title">Operational Prayer</div>
+            <div class="prayer-text" id="display-prayer"></div>
+            
+            <div class="section-divider"></div>
+            <div class="block-title">Tactical Action Step</div>
+            <div class="tactical-text" id="display-tactical"></div>
+
+            <!-- JOURNALING & TRACKING -->
+            <div class="section-divider"></div>
+            <div class="journal-container">
+                <div class="block-title">Your Response</div>
+                <textarea id="journal-input" class="journal-box" placeholder="Write a single sentence to God..."></textarea>
+                <div class="tracking-text" id="tracking-text">Your words are saved locally on this device.</div>
+            </div>
+
+            <!-- Soft Breathing Animation -->
+            <div class="breath-indicator">
+                <div class="breath-orb" id="breathOrb"></div>
+                <span class="breath-text" id="breathText">Breathe</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTNOTE POPUP OVERLAY -->
+    <div id="footnote-overlay" class="footnote-hidden">
+        <div class="footnote-box">
+            <span id="footnote-text"></span>
+            <button id="close-footnote" class="close-btn">×</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
